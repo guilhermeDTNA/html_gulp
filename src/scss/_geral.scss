@@ -1,0 +1,19 @@
+.breadcrumbs {
+    a {
+        color: #000;
+        font-size: em(14);
+        &:after {
+            content: '\203A';
+            margin: 0 10px;
+        }
+
+        &:last-child {
+            font-family: "Swiss 721 Medium";
+            cursor: default;
+            &:after {
+                content: '';
+            }
+        }
+    }
+
+}

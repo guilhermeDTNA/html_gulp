@@ -1,0 +1,26 @@
+// Gerais
+@import "settings";
+@import "reset";
+@import "geral";
+
+// Principais
+@import "header";
+@import "footer";
+
+// Páginas
+@import "home-page";
+
+body{
+	main{
+		.row{
+			display: flex;
+			justify-content: center;
+
+			h1{
+				font-size: 18px;
+			}
+		}
+		
+	}
+	
+}

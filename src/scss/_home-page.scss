@@ -1,0 +1,432 @@
+
+
+main.page-home .slick-dots {
+    position: absolute;
+    bottom: -45px;
+
+    li.slick-active {
+        button {
+            &:before {
+                background: $cor-primaria;
+            }
+        }
+    }
+
+    li {
+        button {
+            &:before {
+                width: 16px;
+                height: 16px;
+                opacity: 1;
+                color: transparent;
+                border: 2px solid $cor-primaria;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+main.page-home section.banners {
+    .slick-next,
+    .slick-prev {
+        height: 34px;
+        z-index: 10;
+
+        svg {
+            stroke: $cor-secundaria;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .slick-next {
+        right: 20px;
+    }
+
+    .slick-prev {
+        left: 20px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 50px;
+    }
+
+    section.carousel.lower {
+        div.slide a img {
+            width: 100%;
+        }
+    }
+}
+
+main.page-home section.categories {
+    margin: 120px 0 80px 0;
+
+    article.category {
+        text-align: center;
+        width: 14.2857142857%;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div.main {
+                width: 100px;
+                height: 100px;
+                border: 3px solid $cor-secundaria;
+                border-radius: 300px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background: #FFFFFF;
+                transition: 0.2s ease-in-out;
+
+                svg path {
+                    fill: $cor-secundaria;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+            div.name {
+                h2 {
+                    font-size: 1em;
+                    color: $cor-secundaria;
+                    text-transform: none;
+                    line-height: 2.813em;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+        }
+
+        &:hover a {
+            div.main {
+                background-color: $cor-primaria;
+                border-color: $cor-primaria;
+                box-shadow: 0 5px 6px 0 rgb(0 0 0 / 20%);
+
+                svg path {
+                    fill: #FFFFFF;
+                }
+            }
+
+            div.name {
+                h2 {
+                    color: $cor-primaria;
+                    font-family: "Swiss 721 Heavy";
+                    font-size: 0.938em;
+                    text-shadow: 0px 0px 1px rgba(163, 8, 16, 30%);
+                }
+            }
+        }
+    }
+
+    .slick-next,
+    .slick-prev {
+        width: 40px;
+        height: 100%;
+        z-index: 10;
+        background: #fffc;
+
+        svg path {
+            transition: 0.2s ease-in-out;
+            stroke: $cor-secundaria;
+        }
+
+        &:hover {
+            svg path {
+                stroke: $cor-primaria;
+            }
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+}
+
+main.page-home section.offers {
+    header {
+        h2 {
+            margin: 0 0 30px 0;
+            text-transform: none;
+            font-size: 1.75rem;
+        }
+    }
+
+    section.certain {
+        display: flex;
+        flex-direction: row;
+
+        div.offer {
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        div.offer:nth-child(1) {
+            margin: 0 15px 0 0;
+        }
+
+        div.offer:nth-child(2) {
+            margin: 0 0 0 15px;
+            position: relative;
+            &:after {
+                content: url('../../img/medicine.svg');
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                right: 0;
+                top: -40px;
+                background: $cor-secundaria;
+                border-radius: 80px;
+      
+                box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }        
+    }
+}
+
+main.page-home section.smalls {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    div.small:nth-child(1n) {
+        margin: 10px 15px 10px 0;
+    }
+
+    div.small:nth-child(2n) {
+        margin: 10px 0 10px 15px;
+    }
+
+    a img {
+        width: 100%;
+    }
+}
+
+
+
+/*==================================================
+    =            Bootstrap 3 Media Queries             =
+    ==================================================*/
+
+        /*==========  Mobile First Method  ==========*/
+
+        /* Custom, iPhone Retina */
+        @media only screen and (min-width : 320px) {
+
+        }
+
+        /* Extra Small Devices, Phones */
+        @media only screen and (min-width : 480px) {
+
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (min-width : 768px) {
+
+            
+            
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (min-width : 992px) {
+
+            main.page-home section.banners {
+                section.carousel.large {
+                    display: block;
+                }
+
+                section.carousel.lower {
+                    display: none;
+                }
+            }
+
+           
+        }
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (min-width : 1200px) {
+
+        }
+
+        /*==========  Non-Mobile First Method  ==========*/
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (max-width : 992px) {
+
+            main.page-home section.banners {
+                section.carousel.large {
+                    display: none;
+                }
+
+                section.carousel.lower {
+                    display: block;
+                }
+
+                
+            }
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+
+            main.page-home section.banners {
+
+                .slick-next,
+                .slick-prev {
+                    width: 30px;
+                    height: 30px;
+                    z-index: 10;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                .slick-next {
+                    right: 5px;
+                }
+
+                .slick-prev {
+                    left: 5px;
+                }
+
+                .slick-dots {
+                    position: absolute;
+                    bottom: -45px;
+
+                    li.slick-active button {
+                        &:before {
+                            background: $cor-primaria;
+                        }
+                    }
+
+                    li button {
+                        &:before {
+                            width: 14px;
+                            height: 14px;
+                            opacity: 1;
+                            color: transparent;
+                            border: 2px solid $cor-primaria;
+                            border-radius: 30px;
+                        }
+                    }
+                }
+
+                .slick-dotted.slick-slider {
+                    margin-bottom: 50px;
+                }
+
+                section.carousel.lower div.slide a img {
+                    width: 100%;
+                }
+            }
+
+            main.page-home section.categories {
+
+                .slick-next {
+                    right: -10px;
+                }
+
+                .slick-prev {
+                    left: -10px;
+                }
+
+                article.category {
+                    &:hover {
+                        a div.main {
+                            background-color: transparent;
+                            border-color: $cor-secundaria;
+
+                            svg path {
+                                fill: $cor-secundaria;
+                            }
+                        }
+
+                        a div.name h2 {
+                            font-size: 1em;
+                            color: $cor-secundaria;
+                            text-transform: none;
+                            font-family: "Swiss 721 Light";
+                            line-height: 2.813em;
+                            transition: 0.2s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+
+            main.page-home section.offers {
+
+                header {
+                    h2 {
+                        font-size: em(21);
+                    }
+                }
+
+                section.certain {
+                    display: flex;
+                    flex-direction: column;
+
+                    div.offer:nth-child(1) {
+                        margin: 0 0 5px 0;
+                    }
+
+                    div.offer:nth-child(2) {
+                        margin: 5px 0 0 0;
+                    }
+                }
+            }
+
+            main.page-home section.smalls {
+                display: flex;
+                flex-direction: column;
+                margin: 80px 0 30px 0;
+
+                div.small:nth-of-type(1n) {
+                    margin: 0 0 5px 0;
+                }
+
+                div.small:nth-of-type(2n) {
+                    margin: 0 0 5px 0;
+                }
+            } 
+        }
+
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+        }
+
+        /* Custom, iPhone Retina */
+        @media only screen and (max-width : 320px) {
+            html body main.page-home section.categories article.category a div.name h2 {
+                font-size: 0.938em;
+            }
+        }

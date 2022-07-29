@@ -11,7 +11,7 @@ function scssTask () {
   .pipe(sass())
   .pipe(postcss([cssnano()]))
   .pipe(autoprefixer({
-    browsers: ['last 99 versions'],
+    Browserslist: ['last 99 versions'],
     cascade: false
   }))
   .pipe(dest('dist', { sourcemaps: '.' }));

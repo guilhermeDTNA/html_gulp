@@ -1,26 +1,11 @@
 // Gerais
-@import "settings";
-@import "reset";
-@import "geral";
+@import "settings/reset";
+@import "settings/vars";
+@import "settings/media";
 
 // Principais
-@import "header";
-@import "footer";
+@import "components/header";
+@import "components/footer";
 
 // Páginas
-@import "home-page";
-
-body{
-	main{
-		.row{
-			display: flex;
-			justify-content: center;
-
-			h1{
-				font-size: 18px;
-			}
-		}
-		
-	}
-	
-}
+@import "pages/home";

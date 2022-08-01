@@ -1,0 +1,13 @@
+body{
+    @include only_mobile{    
+        background-color: gray;
+    }
+
+    @include only_tablet{
+        background-color: blue;
+    }
+
+    @include only_desk{
+        background-color: brown;
+    }
+}
